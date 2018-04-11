@@ -11,9 +11,10 @@ using System;
 namespace mwcAssignment2.Migrations
 {
     [DbContext(typeof(mwcAssignment2Context))]
-    partial class mwcAssignment2ContextModelSnapshot : ModelSnapshot
+    [Migration("20180411042659_AddAvatarColumn")]
+    partial class AddAvatarColumn
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
