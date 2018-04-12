@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System;
+using System.Globalization;
 using System.Linq;
 
 namespace mwcAssignment2.Models
@@ -18,12 +19,14 @@ namespace mwcAssignment2.Models
                     return;   // DB has been seeded
                 }
 
+                CultureInfo MyCultureInfo = new CultureInfo("ms-BN");
+
                 context.Blog.AddRange(
     new Blog
     {
         Title = "Oatfarm Elit do minim fugiat Lorem consectetur elit ullamco aliquip consectetur.",
         Author = "Annette Pena",
-        Date = DateTime.Parse("01/05/2016"),
+        Date = DateTime.Parse("01/05/2016", MyCultureInfo),
         Avatar = "http://placehold.it/40x40",
         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
         Views = "27019",
@@ -39,7 +42,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Utarian Cupidatat sunt velit aliquip sunt.",
                         Author = "Marietta Hickman",
-                        Date = DateTime.Parse("04/08/2016"),
+                        Date = DateTime.Parse("04/08/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "35141",
@@ -55,7 +58,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Datagene Dolore sit qui consectetur dolor magna exercitation velit anim esse est ut sint ut.",
                         Author = "Briana Franks",
-                        Date = DateTime.Parse("01/09/2016"),
+                        Date = DateTime.Parse("01/09/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "32293",
@@ -71,7 +74,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Sustenza Quis amet et ex ullamco excepteur anim voluptate ex nostrud Lorem voluptate.",
                         Author = "Lindsay Savage",
-                        Date = DateTime.Parse("01/09/2016"),
+                        Date = DateTime.Parse("01/09/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "24384",
@@ -87,7 +90,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Bytrex Labore velit ex culpa cillum laborum labore aliqua irure aliquip ut nulla pariatur quis id.",
                         Author = "Whitney Copeland",
-                        Date = DateTime.Parse("15/09/2016"),
+                        Date = DateTime.Parse("15/09/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "47823",
@@ -103,7 +106,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Otherside Enim velit irure enim dolor ut dolore irure duis.",
                         Author = "Rhonda Schroeder",
-                        Date = DateTime.Parse("02/10/2016"),
+                        Date = DateTime.Parse("02/10/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "6010",
@@ -119,7 +122,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Undertap Est ex laboris cillum officia Lorem nisi dolor laborum eu officia sunt id.",
                         Author = "Russell Cote",
-                        Date = DateTime.Parse("02/09/2016"),
+                        Date = DateTime.Parse("02/09/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "26715",
@@ -135,7 +138,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Firewax Laborum ipsum dolore velit fugiat mollit est nisi occaecat nisi.",
                         Author = "Serrano Hensley",
-                        Date = DateTime.Parse("24/07/2016"),
+                        Date = DateTime.Parse("24/07/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "30430",
@@ -151,7 +154,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Maineland Ad aliqua in ipsum laborum commodo occaecat ea.",
                         Author = "Luann Pitts",
-                        Date = DateTime.Parse("26/11/2016"),
+                        Date = DateTime.Parse("26/11/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "29819",
@@ -167,7 +170,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Geekwagon Laboris dolor voluptate commodo in excepteur.",
                         Author = "Margie Maynard",
-                        Date = DateTime.Parse("08/07/2016"),
+                        Date = DateTime.Parse("08/07/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "38736",
@@ -183,7 +186,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Biotica Cillum exercitation sunt nulla dolor id labore commodo non do aute duis.",
                         Author = "Gillespie Sims",
-                        Date = DateTime.Parse("02/01/2017"),
+                        Date = DateTime.Parse("02/01/2017", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "41986",
@@ -199,7 +202,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Moltonic Incididunt ut eiusmod enim in do aute proident laboris quis aliqua cillum.",
                         Author = "Rodriguez Anthony",
-                        Date = DateTime.Parse("17/02/2017"),
+                        Date = DateTime.Parse("17/02/2017", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "14166",
@@ -215,7 +218,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Mixers Fugiat eiusmod Lorem ad proident anim non culpa.",
                         Author = "Mosley Hendrix",
-                        Date = DateTime.Parse("08/08/2016"),
+                        Date = DateTime.Parse("08/08/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "28861",
@@ -231,7 +234,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Zanilla Enim ut nostrud ad id nisi exercitation dolor magna velit.",
                         Author = "Patel Mcdonald",
-                        Date = DateTime.Parse("07/06/2016"),
+                        Date = DateTime.Parse("07/06/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "113",
@@ -247,7 +250,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Enervate Sint sint et id eiusmod incididunt incididunt quis labore minim ea sunt.",
                         Author = "Ramos Wood",
-                        Date = DateTime.Parse("19/05/2016"),
+                        Date = DateTime.Parse("19/05/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "43913",
@@ -263,7 +266,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Goko Laboris esse eiusmod deserunt deserunt mollit irure velit officia ullamco tempor et.",
                         Author = "Norma Moreno",
-                        Date = DateTime.Parse("22/05/2016"),
+                        Date = DateTime.Parse("22/05/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "39166",
@@ -279,7 +282,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Netility Minim ad duis officia consectetur sint esse officia culpa sint magna dolore exercitation veniam.",
                         Author = "Elliott Mercado",
-                        Date = DateTime.Parse("23/02/2017"),
+                        Date = DateTime.Parse("23/02/2017", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "30587",
@@ -295,7 +298,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Extragen Excepteur ex anim laborum labore et est qui ex Lorem voluptate quis.",
                         Author = "Tracie Pierce",
-                        Date = DateTime.Parse("26/03/2016"),
+                        Date = DateTime.Parse("26/03/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "4949",
@@ -311,7 +314,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Deepends Aliqua consectetur ut cillum ex cillum aliquip.",
                         Author = "Katheryn Park",
-                        Date = DateTime.Parse("29/02/2016"),
+                        Date = DateTime.Parse("29/02/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "31094",
@@ -327,7 +330,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Isostream Reprehenderit exercitation ex in nulla occaecat reprehenderit minim.",
                         Author = "Henry Pruitt",
-                        Date = DateTime.Parse("28/01/2017"),
+                        Date = DateTime.Parse("28/01/2017", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "38917",
@@ -343,7 +346,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Zisis Officia ullamco irure duis elit magna ea.",
                         Author = "Whitaker Norton",
-                        Date = DateTime.Parse("22/01/2017"),
+                        Date = DateTime.Parse("22/01/2017", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "2466",
@@ -359,7 +362,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Glasstep Adipisicing nisi laborum do amet eiusmod esse dolor do dolor.",
                         Author = "Rosie Ross",
-                        Date = DateTime.Parse("12/08/2016"),
+                        Date = DateTime.Parse("12/08/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "15689",
@@ -375,7 +378,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Enersave Cupidatat do cillum id qui eu ipsum consectetur ipsum voluptate.",
                         Author = "Lacey Merrill",
-                        Date = DateTime.Parse("16/06/2016"),
+                        Date = DateTime.Parse("16/06/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "28474",
@@ -391,7 +394,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Strezzo Enim irure esse elit dolor ut anim exercitation ipsum mollit.",
                         Author = "Conner Sandoval",
-                        Date = DateTime.Parse("01/02/2017"),
+                        Date = DateTime.Parse("01/02/2017", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "11059",
@@ -407,7 +410,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Buzzworks Ex dolor duis qui eu consectetur elit elit commodo nisi anim commodo ad.",
                         Author = "Marshall Dawson",
-                        Date = DateTime.Parse("07/01/2016"),
+                        Date = DateTime.Parse("07/01/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "24611",
@@ -423,7 +426,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Zuvy Nulla ullamco non veniam ipsum laboris exercitation id do cupidatat ut Lorem in veniam velit.",
                         Author = "Blackburn Donovan",
-                        Date = DateTime.Parse("29/11/2016"),
+                        Date = DateTime.Parse("29/11/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "47422",
@@ -439,7 +442,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Canopoly Cupidatat consequat amet duis sunt tempor ullamco cillum cillum pariatur cillum ullamco ad proident minim.",
                         Author = "Margret Warren",
-                        Date = DateTime.Parse("20/05/2016"),
+                        Date = DateTime.Parse("20/05/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "36304",
@@ -455,7 +458,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Envire Consequat deserunt ea ea veniam incididunt ex do nostrud reprehenderit consectetur irure dolore commodo culpa.",
                         Author = "Alfreda Mullen",
-                        Date = DateTime.Parse("20/05/2016"),
+                        Date = DateTime.Parse("20/05/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "24656",
@@ -471,7 +474,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Comstar Esse in consectetur ut mollit eu duis sint.",
                         Author = "Bush Goodwin",
-                        Date = DateTime.Parse("05/11/2016"),
+                        Date = DateTime.Parse("05/11/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "16706",
@@ -487,7 +490,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Brainclip Ex voluptate ex tempor labore commodo amet proident.",
                         Author = "Eva Grimes",
-                        Date = DateTime.Parse("01/08/2016"),
+                        Date = DateTime.Parse("01/08/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "33323",
@@ -503,7 +506,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Scentric Nisi sunt occaecat pariatur culpa fugiat.",
                         Author = "Craig Lloyd",
-                        Date = DateTime.Parse("14/10/2016"),
+                        Date = DateTime.Parse("14/10/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "28610",
@@ -519,7 +522,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Verbus Adipisicing voluptate fugiat consequat veniam qui magna.",
                         Author = "Maude Mendoza",
-                        Date = DateTime.Parse("22/03/2016"),
+                        Date = DateTime.Parse("22/03/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "48959",
@@ -535,7 +538,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Sureplex In deserunt aliqua pariatur irure nulla amet in culpa nisi aute.",
                         Author = "Stella Gates",
-                        Date = DateTime.Parse("03/04/2016"),
+                        Date = DateTime.Parse("03/04/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "44472",
@@ -551,7 +554,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Acumentor Duis sunt incididunt nostrud exercitation aliquip anim irure elit adipisicing incididunt velit velit sint deserunt.",
                         Author = "Hines Colon",
-                        Date = DateTime.Parse("10/12/2016"),
+                        Date = DateTime.Parse("10/12/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "28075",
@@ -567,7 +570,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Ozean Consequat consequat est et nulla.",
                         Author = "Julianne Robinson",
-                        Date = DateTime.Parse("20/06/2016"),
+                        Date = DateTime.Parse("20/06/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "18561",
@@ -583,7 +586,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Webiotic Ut cillum pariatur anim laborum id Lorem.",
                         Author = "Eugenia Spears",
-                        Date = DateTime.Parse("02/08/2016"),
+                        Date = DateTime.Parse("02/08/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "11579",
@@ -599,7 +602,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Obones Sunt dolore duis anim nulla nostrud eu ex.",
                         Author = "Corrine Mack",
-                        Date = DateTime.Parse("02/04/2016"),
+                        Date = DateTime.Parse("02/04/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "49409",
@@ -615,7 +618,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Comvene Cupidatat Lorem incididunt adipisicing excepteur commodo deserunt sit ex non proident enim adipisicing aute voluptate.",
                         Author = "Potts Jacobs",
-                        Date = DateTime.Parse("10/12/2016"),
+                        Date = DateTime.Parse("10/12/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "19144",
@@ -631,7 +634,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Exoswitch Laborum excepteur est fugiat ullamco ad voluptate esse.",
                         Author = "Donaldson Heath",
-                        Date = DateTime.Parse("10/03/2017"),
+                        Date = DateTime.Parse("10/03/2017", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "21925",
@@ -647,7 +650,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Zoid Ex non ex mollit reprehenderit in incididunt veniam sunt et.",
                         Author = "Terra Stevenson",
-                        Date = DateTime.Parse("13/04/2016"),
+                        Date = DateTime.Parse("13/04/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "26130",
@@ -663,7 +666,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Bullzone Exercitation reprehenderit laboris ut qui qui consequat.",
                         Author = "Debra Gibbs",
-                        Date = DateTime.Parse("27/09/2016"),
+                        Date = DateTime.Parse("27/09/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "35200",
@@ -679,7 +682,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Terrago Minim ipsum occaecat minim deserunt ex dolor consectetur laboris eu adipisicing officia pariatur magna.",
                         Author = "Sallie Fulton",
-                        Date = DateTime.Parse("19/02/2017"),
+                        Date = DateTime.Parse("19/02/2017", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "14841",
@@ -695,7 +698,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Accupharm Voluptate officia anim sunt eiusmod esse et.",
                         Author = "Guy Wiley",
-                        Date = DateTime.Parse("03/05/2016"),
+                        Date = DateTime.Parse("03/05/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "38686",
@@ -711,7 +714,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Callflex Exercitation sint sunt est eu minim ea incididunt magna non velit ullamco aliqua.",
                         Author = "Boyd Pratt",
-                        Date = DateTime.Parse("23/05/2016"),
+                        Date = DateTime.Parse("23/05/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "39666",
@@ -727,7 +730,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Polaria Sint aute dolore non eiusmod minim sint.",
                         Author = "Cooper Elliott",
-                        Date = DateTime.Parse("06/03/2016"),
+                        Date = DateTime.Parse("06/03/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "7171",
@@ -743,7 +746,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Viasia Sint nulla dolore officia qui.",
                         Author = "Santos Riggs",
-                        Date = DateTime.Parse("18/08/2016"),
+                        Date = DateTime.Parse("18/08/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "4874",
@@ -759,7 +762,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Cognicode Non reprehenderit commodo eiusmod ex officia ut officia culpa duis adipisicing proident nisi eiusmod ad.",
                         Author = "Holcomb Todd",
-                        Date = DateTime.Parse("01/01/2017"),
+                        Date = DateTime.Parse("01/01/2017", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "28963",
@@ -775,7 +778,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Xanide Anim sint duis aute enim mollit voluptate.",
                         Author = "Dionne Eaton",
-                        Date = DateTime.Parse("28/06/2016"),
+                        Date = DateTime.Parse("28/06/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "30551",
@@ -791,7 +794,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Zillidium Velit eiusmod sint eiusmod velit dolore commodo nostrud dolore adipisicing.",
                         Author = "Neva Hopkins",
-                        Date = DateTime.Parse("17/12/2016"),
+                        Date = DateTime.Parse("17/12/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "23362",
@@ -807,7 +810,7 @@ namespace mwcAssignment2.Models
                     {
                         Title = "Portico Tempor consequat duis non elit non magna ea esse quis aliqua dolore aliqua consectetur pariatur.",
                         Author = "Dina Fuentes",
-                        Date = DateTime.Parse("29/09/2016"),
+                        Date = DateTime.Parse("29/09/2016", MyCultureInfo),
                         Avatar = "http://placehold.it/40x40",
                         Img = "http://placehold.it/800x425/E8117F/ffffff/?text=Article+image",
                         Views = "33751",
